@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/profile_admin"
+        android:title="Profile"/>
+    <item android:id="@+id/change_pg"
+        android:title="Change PG"/>
+    <item android:id="@+id/add_user"
+        android:title="Tenant Management"/>
+    <item android:id="@+id/add_room"
+        android:title="Room Management"/>
+    <item android:id="@+id/add_bed"
+        android:title="Bed Management"/>
+    <item android:id="@+id/add_bed_allotment"
+        android:title="Bed Allotment"/>
+    <item android:id="@+id/add_manager"
+        android:title="Add Manager"/>
+    <item android:id="@+id/admin_change_password"
+        android:title="Change Password"/>
+    <item android:id="@+id/user_complaint"
+        android:title="View Complaints"/>
+    <item android:id="@+id/logout"
+        android:title="Logout"/>
+</menu>

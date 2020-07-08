@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.testlogin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="LockedOrientationActivity">
+        <activity android:name=".change_password"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".User_Profile.userReply"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin_Profile.adminReply"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin_Profile.admin_details_filling"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin_Profile.changePg"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".super_admin.admin_registration"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".super_admin.viewpg"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".super_admin.AdminList"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".super_admin.superAdmin"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin_Profile.adminProfile"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PG_manager_profile.pgManagerProfile"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".User_Profile.userProfile"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splashscreen"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

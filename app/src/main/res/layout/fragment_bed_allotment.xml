@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".Admin_Profile.bed_allotment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            style="@style/textHeading"
+            android:gravity="center"
+            android:text="Bed Allotment"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/room_spinner"
+                android:spinnerMode="dialog"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/room"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/bed_spinner"
+                android:spinnerMode="dialog"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/bed"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/tenant_spinner"
+                android:spinnerMode="dialog"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/user"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/allot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/btnTextColor"
+            android:text="Allot Bed"
+            android:layout_gravity="center_horizontal" />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t_pro"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Profile.staff_list"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="  Id"
+                    android:background="@drawable/boader"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/boader"
+                    android:text="  Manager Name"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/boader"
+                    android:text="  Email"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/boader"
+                    android:text="  Phone No"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/boader"
+                    android:text="  Status"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="  1"
+                    android:background="@drawable/boader"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/nam"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/boader"
+                    android:text="  -----"/>
+                <TextView
+                    android:id="@+id/em"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/boader"
+                    android:text="  -----"/>
+                <TextView
+                    android:id="@+id/mob"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/boader"
+                    android:text="  -----"/>
+                <TextView
+                    android:id="@+id/mStatus"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/boader"
+                    android:text="  Click here for freeup"/>
+                <TextView
+                    android:id="@+id/mid"
+                    android:layout_width="10dp"
+                    android:visibility="invisible"
+                    android:layout_height="10dp"
+                    android:background="@drawable/boader"
+                    android:text="  id"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/boader"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="  Id"
+                    android:background="@drawable/boader"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:text="  Name"
+                    android:background="@drawable/boader" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/boader"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="  Email" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="  Staff Type"
+                    android:background="@drawable/boader"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="  Phone No"
+                    android:background="@drawable/boader"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="  Address"
+                    android:background="@drawable/boader"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="  Joining Date"
+                    android:background="@drawable/boader"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/boader"
+                    android:text="  Status"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler_view_manager">
+            </androidx.recyclerview.widget.RecyclerView>
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_bar_manager"
+                />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

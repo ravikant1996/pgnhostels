@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".PG_manager_profile.admin_profile_frag"
+android:padding="10dp"
+    android:background="@drawable/custom_edit_text"
+android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:background="@drawable/gradient3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pgid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/btnTextColor"
+            android:layout_marginTop="50dp"
+            android:text="PG ID" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/btnTextColor"
+        android:background="@drawable/gradient3"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:text="Profile"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="PG Name" />
+
+        <TextView
+            android:id="@+id/pgname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+        <TextView
+            android:id="@+id/pgemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Owner" />
+        <TextView
+            android:id="@+id/pgowner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Phone No" />
+        <TextView
+            android:id="@+id/pgownerphoneno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Contact Person" />
+        <TextView
+            android:id="@+id/pgcontactperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Mobile" />
+        <TextView
+            android:id="@+id/contactpmobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Locality" />
+        <TextView
+            android:id="@+id/pglocality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="City" />
+        <TextView
+            android:id="@+id/pgcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="State" />
+        <TextView
+            android:id="@+id/pgstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Description" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------"
+            android:maxHeight="250dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

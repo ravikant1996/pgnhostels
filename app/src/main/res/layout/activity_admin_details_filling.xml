@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".Admin_Profile.admin_details_filling"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+       android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/textHeading"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="PG Details Filling"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact person"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text"
+                android:maxLength="20"
+                android:inputType="textPersonName"
+                android:id="@+id/contper_Input"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone No"
+                android:background="@drawable/custom_edit_text"
+                android:maxLength="10"
+                android:layout_margin="5dp"
+                android:inputType="phone"
+                android:id="@+id/phoneInput"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:maxLength="50"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text"
+                android:inputType="textPersonName"
+                android:id="@+id/Locatity_Input"/>
+
+            <Spinner
+                android:id="@+id/state_Input"
+                android:spinnerMode="dialog"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/s1"/>
+            <Spinner
+                android:spinnerMode="dialog"
+                android:id="@+id/city_Input"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/s2"/>
+
+            <EditText
+                android:id="@+id/des_Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Short Description"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text"
+                android:inputType="textMultiLine"
+                android:maxLines="4" />
+
+
+        <Button
+            android:id="@+id/adminDetailsRegBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/btnTextColor"
+            android:background="@drawable/custom_button"
+            android:layout_margin="10dp"
+            android:textSize="15sp" />
+            <ProgressBar
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_prog"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

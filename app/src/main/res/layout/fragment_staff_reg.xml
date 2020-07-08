@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".Admin_Profile.staff_reg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:gravity="center"
+            style="@style/textHeading"
+            android:text="Staff Registration"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:maxLength="30"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text"
+                android:inputType="textPersonName"
+                android:id="@+id/tname"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text"
+                android:maxLength="30"
+                android:inputType="textEmailAddress"
+                android:id="@+id/email"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:spinnerMode="dialog"
+                android:id="@+id/stafftype" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/typestaff"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone No"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:id="@+id/phone"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:maxLength="50"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text"
+                android:imeOptions="actionDone"
+                android:inputType="textPostalAddress"
+                android:id="@+id/address"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Joining Date"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_edit_text"
+            android:inputType="date"
+            android:textSize="18sp"
+            android:id="@+id/date"/>
+
+         <Button
+            android:id="@+id/staffregbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:textColor="@color/background_color"
+             android:background="@drawable/custom_button"
+            android:layout_gravity="center_horizontal"
+            android:text="Register"
+            />
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/su_pro"/>
+    </LinearLayout>
+
+</ScrollView>

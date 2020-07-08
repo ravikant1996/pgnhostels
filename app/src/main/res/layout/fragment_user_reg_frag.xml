@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mangerFragment"
+    android:background="@color/background_color"
+    tools:context=".Admin_Profile.user_reg_frag"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            style="@style/textHeading"
+            android:gravity="center"
+            android:text="User Registration"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:background="@drawable/custom_edit_text"
+        android:layout_margin="5dp"
+        android:inputType="textPersonName"
+        android:id="@+id/nameInput"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="@drawable/custom_edit_text"
+        android:layout_margin="5dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/emailInput"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="@drawable/custom_edit_text"
+        android:layout_margin="5dp"
+        android:inputType="textPassword"
+        android:id="@+id/passwordInput"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone No"
+        android:background="@drawable/custom_edit_text"
+        android:layout_margin="5dp"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:id="@+id/phoneInput"/>
+     <Button
+        android:id="@+id/userRegBtn"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/btnTextColor"
+        android:background="@drawable/custom_button"
+        android:layout_margin="10dp"
+        android:text="Register"
+        android:textSize="15sp"
+        />
+
+        <ProgressBar
+            android:id="@+id/u_pro"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

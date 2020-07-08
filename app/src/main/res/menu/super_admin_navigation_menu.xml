@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/dashboard_super"
+        android:title="Dashboard"
+        android:icon="@drawable/home"/>
+    <item android:id="@+id/add_pg"
+        android:title="Add PG"
+        android:icon="@drawable/add1"/>
+    <item android:id="@+id/view_admin"
+        android:title="View PG List"
+        android:icon="@drawable/viewpg1"/>
+    <item android:id="@+id/accou"
+        android:title="View Complaints"
+        android:icon="@drawable/complaints1"/>
+    <item android:id="@+id/logout"
+        android:icon="@drawable/logout1"
+        android:title="Logout"/>
+</menu>
